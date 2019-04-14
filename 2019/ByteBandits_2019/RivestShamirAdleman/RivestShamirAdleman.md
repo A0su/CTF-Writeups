@@ -39,7 +39,6 @@ Running this script returns:
 Converting this to ASCII we get:
 
 flag{nO_paDDing00_rsa}
-
 ```
 
 # Helpful Resources
