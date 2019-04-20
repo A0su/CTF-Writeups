@@ -1,12 +1,14 @@
-[PWN](pwn.md)
+# Category
 
-[CRYPTO] (/crypto)
+[PWN](/pwn/readme.md)
 
-[FORENSICS] (/forensics)
+[CRYPTO](/crypto/readme.md)
 
-[MISC] (/miscellaneous)
+[FORENSICS](/forensics/readme.md)
 
-[WEB] (/web)
+[MISCELLANEOUS](/miscellaneous/readme.md)
 
-[REVERSING] (/reversing)
+[WEB](/web/readme.md)
+
+[REVERSING](/reversing/readme.md)
 
