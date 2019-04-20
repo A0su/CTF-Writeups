@@ -1,6 +1,6 @@
 # Writeups by Category
 
-[PWN](/pwn/readme.md)
+[PWN](/pwn/README.md)
 
 [CRYPTO](/crypto/readme.md)
 
