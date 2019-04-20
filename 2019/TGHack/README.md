@@ -2,13 +2,13 @@
 
 [PWN](pwn/README.MD)
 
-[CRYPTO](/crypto/readme.md)
+[CRYPTO](crypto/README.md)
 
-[FORENSICS](/forensics/readme.md)
+[FORENSICS](forensics/README.md)
 
-[MISCELLANEOUS](/miscellaneous/readme.md)
+[MISCELLANEOUS](miscellaneous/README.md)
 
-[WEB](/web/readme.md)
+[WEB](web/README.md)
 
-[REVERSING](/reversing/readme.md)
+[REVERSING](reversing/README.md)
 
