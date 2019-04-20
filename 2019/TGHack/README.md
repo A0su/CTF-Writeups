@@ -1,4 +1,4 @@
-[PWN] (/pwn)
+[PWN] (/pwn/pwn.md)
 
 [CRYPTO] (/crypto)
 
