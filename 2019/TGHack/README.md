@@ -8,7 +8,3 @@
 
 [MISCELLANEOUS](miscellaneous/README.md)
 
-[WEB](web/README.md)
-
-[REVERSING](reversing/README.md)
-
