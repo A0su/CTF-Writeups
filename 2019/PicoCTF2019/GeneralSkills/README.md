@@ -30,7 +30,7 @@ a0su@a0su:~/Downloads$ grep 'pico' file
 picoCTF{grep_is_good_to_find_things_887251c6}
 ```
 # Resources - 100
-```
+```bash
 a0su@a0su:~$ curl https://picoctf.com/resources | grep 'picoCTF{'
  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
    Dload  Upload   Total   Spent    Left  Speed
@@ -46,7 +46,7 @@ Flag: `picoCTF{r3source_pag3_f1ag}`
 # strings it - 100
 Can you find the flag in file without running it? You can also find the file in /problems/strings-it_3_8386a6aa560aecfba03c0c6a550b5c51 on the shell server.
 
-```
+```bash
 a0su@a0su:~/Downloads$ strings strings | grep 'pico'
 picoCTF{5tRIng5_1T_c7fff9e5}
 ```
@@ -54,7 +54,7 @@ picoCTF{5tRIng5_1T_c7fff9e5}
 # What's a net cat - 100
 Using netcat (nc) is going to be pretty important. Can you connect to 2019shell1.picoctf.com at port 49816 to get the flag?
 
-```
+```bash
 a0su@a0su:~/Downloads$ nc 2019shell1.picoctf.com 49816 
 You're on your way to becoming the net cat master
 picoCTF{nEtCat_Mast3ry_a752a0d3}
@@ -64,7 +64,7 @@ picoCTF{nEtCat_Mast3ry_a752a0d3}
 Sometimes you need to handle process data outside of a file. Can you find a way to keep the output from this program and search for the flag? Connect to 2019shell1.picoctf.com 21550.
 
 Solution:
-```
+```bash
 a0su@a0su:~/Documents/CTF/PicoCTF_2019/tar$ nc 2019shell1.picoctf.com 21550 |  grep "pico"
 picoCTF{digital_plumb3r_8f946c69}
 ```
@@ -75,7 +75,7 @@ I've used a super secret mind trick to hide this file. Maybe something lies in /
 If you enter the online shell and ```ls -a /problems/where-is-the-file_6_8eae99761e71a8a21d3b82ac6cf2a7d0``` you'll see ```.cant_see_me```
 
 Solution:
-```
+```bash
 cat /problems/where-is-the-file_6_8eae99761e71a8a21d3b82ac6cf2a7d0/.cant_see_me
 ```
 Flag: ```picoCTF{w3ll_that_d1dnt_w0RK_a88d16e4}```

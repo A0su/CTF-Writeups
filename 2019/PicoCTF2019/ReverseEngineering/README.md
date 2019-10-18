@@ -1,7 +1,7 @@
 # vault-door-training - 50
 
 Given .java file:
-```
+```java
 import java.util.*;
 
 class VaultDoorTraining {
@@ -35,7 +35,7 @@ Flag: ```picoCTF{w4rm1ng_Up_w1tH_jAv4_e57d01a632a}```
 # vault-door-1 - 100
 
 Given .java file:
-```
+```java
 import java.util.*;
 
 class VaultDoor1 {
@@ -97,7 +97,7 @@ class VaultDoor1 {
 I used sublime to quickly manipulate the text into a python script that I could sort and get the flag rather than do it manually.
 
 <b>Solution</b>
-```
+```python
 arr = [(0,'d'),(29,'7'),(4,'r'),(2,'5'),(23,'r'),(3,'c'),(17,'4'),(1,'3'),(7,'b'),(10,'_'),(5,'4'),(9,'3'),(11,'t'),(15,'c'),(8,'l'),(12,'H'),(20,'c'),(14,'_'),(6,'m'),(24,'5'),(18,'r'),(13,'3'),(19,'4'),(21,'T'),(16,'H'),(27,'1'),(30,'f'),(25,'_'),(22,'3'),(28,'e'),(26,'5'),(31,'d')]
 
 s = ''
@@ -108,8 +108,8 @@ print(s)
 ```
 ```Flag: picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_51e7fd}```
 
-#asm1 - 200
-```
+# asm1 - 200
+```assembly
 What does asm1(0x1b4) return?
 
 asm1:
@@ -136,7 +136,7 @@ asm1:
         <+61>:  ret  
 ```
 <b>Solution</b>
-```
+```C
 This one looks simple enough to not attempt to write it into C, but I'll do it anyways
 
 var = 0x1b4 //Same as [ebp+0x8]
@@ -147,7 +147,7 @@ var = 0x1b4 //Same as [ebp+0x8]
 if(var > 0x421){ //false
 	if(var != 0x7f7){
 		eax = var;
-		print(eax)		
+		printf(eax);	
 	}
 }
 
@@ -169,7 +169,7 @@ So the result is 0x1b4 + 0x13 = 0x1c7
 # vault-door-3 - 200
 
 Given .java file:
-```
+```java
 a0su@a0su:~/Downloads$ cat VaultDoor3.java 
 import java.util.*;
 class VaultDoor3 {
@@ -222,7 +222,7 @@ TO DO
 ```
 
 # asm2 - 250
-```
+```assembly
 What does asm2(0x10,0x18) return?
 asm2:   <+0>:   push   ebp
         <+1>:   mov    ebp,esp
@@ -241,7 +241,7 @@ asm2:   <+0>:   push   ebp
         <+44>:  ret  
 ```
 <b>Solution</b>
-```
+```c
 var1 = [ebp+0x8] = 0x10
 var2 = [ebp+0xc] = 0x18
 
