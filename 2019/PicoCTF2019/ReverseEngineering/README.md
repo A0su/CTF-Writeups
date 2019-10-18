@@ -108,7 +108,7 @@ print(s)
 ```
 ```Flag: picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_51e7fd}```
 
-#asm1 - 200
+# asm1 - 200
 ```assembly
 What does asm1(0x1b4) return?
 
