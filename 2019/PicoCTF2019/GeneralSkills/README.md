@@ -3,20 +3,20 @@
 # 2Warm - 50
 Can you convert the number 42 (base 10) to binary (base 2)?
  `python -c 'print(bin(42))'`  gives us 0b101010
-<\br>Flag: picoCTF{101010}
+</br>Flag: picoCTF{101010}
 
 
 # Lets Warm Up - 50
 If I told you a word started with 0x70 in hexadecimal, what would it start with in ASCII?
 
  `python -c 'print("70".decode("hex"))'`, gives us 'p' 
- <\br>Flag: picoCTF{p}
+ </br>Flag: picoCTF{p}
 
 # Warmed Up - 50
 What is 0x3D (base 16) in decimal (base 10).
 
  `python -c 'print(0x3D)'`
- <\br> Flag: picoCTF{61}
+ </br> Flag: picoCTF{61}
 
 # Bases
 What does this bDNhcm5fdGgzX3IwcDM1 mean? I think it has something to do with bases.
@@ -43,4 +43,21 @@ a0su@a0su:~$ curl https://picoctf.com/resources | grep 'picoCTF{'
 </br>
 Flag: `picoCTF{r3source_pag3_f1ag}`
 
-# 
+# strings it - 100
+Can you find the flag in file without running it? You can also find the file in /problems/strings-it_3_8386a6aa560aecfba03c0c6a550b5c51 on the shell server.
+
+```
+a0su@a0su:~/Downloads$ strings strings | grep 'pico'
+picoCTF{5tRIng5_1T_c7fff9e5}
+```
+
+# What's a net cat - 100
+Using netcat (nc) is going to be pretty important. Can you connect to 2019shell1.picoctf.com at port 49816 to get the flag?
+
+```
+a0su@a0su:~/Downloads$ nc 2019shell1.picoctf.com 49816 
+You're on your way to becoming the net cat master
+picoCTF{nEtCat_Mast3ry_a752a0d3}
+```
+
+
