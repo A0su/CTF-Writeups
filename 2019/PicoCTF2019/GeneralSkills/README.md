@@ -5,7 +5,6 @@ Can you convert the number 42 (base 10) to binary (base 2)?
  `python -c 'print(bin(42))'`  gives us 0b101010
 </br>Flag: picoCTF{101010}
 
-
 # Lets Warm Up - 50
 If I told you a word started with 0x70 in hexadecimal, what would it start with in ASCII?
 
@@ -61,4 +60,23 @@ You're on your way to becoming the net cat master
 picoCTF{nEtCat_Mast3ry_a752a0d3}
 ```
 
+# plumbing - 200
+Sometimes you need to handle process data outside of a file. Can you find a way to keep the output from this program and search for the flag? Connect to 2019shell1.picoctf.com 21550.
+
+Solution:
+```
+a0su@a0su:~/Documents/CTF/PicoCTF_2019/tar$ nc 2019shell1.picoctf.com 21550 |  grep "pico"
+picoCTF{digital_plumb3r_8f946c69}
+```
+
+# where-is-the-file - 200
+I've used a super secret mind trick to hide this file. Maybe something lies in /problems/where-is-the-file_6_8eae99761e71a8a21d3b82ac6cf2a7d0.
+
+If you enter the online shell and ```ls -a /problems/where-is-the-file_6_8eae99761e71a8a21d3b82ac6cf2a7d0``` you'll see ```.cant_see_me```
+
+Solution:
+```
+cat /problems/where-is-the-file_6_8eae99761e71a8a21d3b82ac6cf2a7d0/.cant_see_me
+```
+Flag: ```picoCTF{w3ll_that_d1dnt_w0RK_a88d16e4}```
 
