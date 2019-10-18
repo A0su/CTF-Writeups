@@ -74,3 +74,6 @@ print(hex(mpz(root(c,e)[0])).strip('0x').strip('L').decode('hex'))
 ```
 Flag: picoCTF{n33d_a_lArg3r_e_21d2334d}
 ```
+
+# b00tl3gRSA2 - 400
+TODO - hopefully find solution script
