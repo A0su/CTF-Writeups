@@ -33,11 +33,12 @@ picoCTF{grep_is_good_to_find_things_887251c6}
 # Resources - 100
 ```
 a0su@a0su:~$ curl https://picoctf.com/resources | grep 'picoCTF{'
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-	                                 Dload  Upload   Total   Spent    Left  Speed
-																	 100 13164  100 13164    0  <li><code class="highlighter-rouge">picoCTF{r3source_pag3_f1ag}</code> (2019 competition)</li>
-																	      <li><code class="highlighter-rouge">picoCTF{xiexie_ni_lai_zheli}</code> (2018 competition)</li>
-																				  0   108k      0 --:--:-- --:--:-- --:--:--  108k
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+   Dload  Upload   Total   Spent    Left  Speed
+   100 13164  100 13164    0 		0   108k      0 --:--:-- --:--:-- --:--:--  108k
+ 
+<li><code class="highlighter-rouge">picoCTF{r3source_pag3_f1ag}</code> (2019 competition)</li>
+<li><code class="highlighter-rouge">picoCTF{xiexie_ni_lai_zheli}</code> (2018 competition)</li>
 
 ```
 </br>
