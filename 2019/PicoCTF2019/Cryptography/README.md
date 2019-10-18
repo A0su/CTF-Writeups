@@ -46,7 +46,7 @@ Flag: picoCTF{crossingtherubicongysimakx}
 # Flags - 200
 TODO - Need to find link again.
 
-#miniRSA - 300
+# miniRSA - 300
 Lets decrypt this: ciphertext? Something seems a bit small
 
 Given: 
