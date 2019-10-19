@@ -304,3 +304,78 @@ WORD PTR - 2 bytes
 DWORD PTR - 4 bytes
 */
 ```
+
+# reverse_cipher 300
+Given a text file and an executable that generates the text
+
+Ciphertext:
+```picoCTF{w1{1wq84>654f26}```
+
+Ghidra Disassembly
+```C
+void main(void)
+
+{
+  size_t sVar1;
+  char local_58 [23];
+  char local_41;
+  int local_2c;
+  FILE *local_28;
+  FILE *local_20;
+  uint local_14;
+  int local_10;
+  char local_9;
+  
+  local_20 = fopen("flag.txt","r");
+  local_28 = fopen("rev_this","a");
+  if (local_20 == (FILE *)0x0) {
+    puts("No flag found, please make sure this is run on the server");
+  }
+  if (local_28 == (FILE *)0x0) {
+    puts("please run this on the server");
+  }
+  sVar1 = fread(local_58,0x18,1,local_20);
+  local_2c = (int)sVar1;
+  if (local_2c < 1) {
+                    /* WARNING: Subroutine does not return */
+    exit(0);
+  }
+  local_10 = 0;
+  while (local_10 < 8) {
+    local_9 = local_58[(long)local_10];
+    fputc((int)local_9,local_28);
+    local_10 = local_10 + 1;
+  }
+  local_14 = 8;
+  while ((int)local_14 < 0x17) {
+    if ((local_14 & 1) == 0) {
+      local_9 = local_58[(long)(int)local_14] + '\x05';
+    }
+    else {
+      local_9 = local_58[(long)(int)local_14] + -2;
+    }
+    fputc((int)local_9,local_28);
+    local_14 = local_14 + 1;
+  }
+  local_9 = local_41;
+  fputc((int)local_41,local_28);
+  fclose(local_28);
+  fclose(local_20);
+  return;
+}
+```
+```Flag: picoCTF{r3v3rs369806a41}```
+<b>Solution</b>
+```Python
+begin = 'picoCTF{'
+c = 'w1{1wq84>654f26'
+end = '}'
+o = ''
+for i in range(len(c)):
+    if(((i+8)&1) ==0):
+        o += chr(ord(c[i])-0x5)
+    else:
+        o += chr(ord(c[i])+2)
+
+print(begin+o+end)
+```
