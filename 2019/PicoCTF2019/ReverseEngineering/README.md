@@ -265,7 +265,7 @@ We can find this to be 231 times so 0x18 + 231 = 255 = 0xff
 
 Flag: picoCTF{0xff}
 ```
-# asm3 - 300
+# asm3 - 300 TODO
 ```assembly
 asm3(0xcdc485c1,0xd6bd5e88,0xe4c1548d)
 
