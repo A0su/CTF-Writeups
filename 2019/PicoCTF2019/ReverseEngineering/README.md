@@ -265,3 +265,42 @@ We can find this to be 231 times so 0x18 + 231 = 255 = 0xff
 
 Flag: picoCTF{0xff}
 ```
+# asm3 - 300
+```assembly
+asm3(0xcdc485c1,0xd6bd5e88,0xe4c1548d)
+
+asm3:
+        <+0>:     push   ebp
+        <+1>:     mov    ebp,esp
+        <+3>:     xor    eax,eax
+        <+5>:     mov    ah,BYTE PTR [ebp+0x8]
+        <+8>:     shl    ax,0x10
+        <+12>:    sub    al,BYTE PTR [ebp+0xe]
+        <+15>:    add    ah,BYTE PTR [ebp+0xc]
+        <+18>:    xor    ax,WORD PTR [ebp+0x10]
+        <+22>:    nop
+        <+23>:    pop    ebp
+        <+24>:    ret    
+```
+
+```C
+/*
+eax is a 32bit register
+The lower 16bits is composed of ax
+Then the lower 8 of ax is composed of al
+The higher 8 of ax is composed of ah
+It looks like this:
+---------------
+      eax     | 
+--------------- 
+       |  ax  | 
+---------------
+       |ah| al| 
+---------------
+
+Size Directives:
+BYTE PTR - 1 bytes
+WORD PTR - 2 bytes
+DWORD PTR - 4 bytes
+*/
+```
