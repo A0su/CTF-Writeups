@@ -4,7 +4,12 @@ I had a hard time automating this since it blacked out my entire terminal, so I 
 
 # Red Yarn
 ```bash
-strings DEBUG.COM | grep "TU"
+a0su@a0su:~/Documents/CTF/2019/TUCTF/Misc/RedYarn$ ls
+DEBUG.COM  solve
+a0su@a0su:~/Documents/CTF/2019/TUCTF/Misc/RedYarn$ strings DEBUG.COM | grep "TU"
+TUCTF{D0NT_F0RG3T_TH3_B4S1CS!}
+a0su@a0su:~/Documents/CTF/2019/TUCTF/Misc/RedYarn$ 
+
 ```
 # Super Secret
 ```basha0su@a0su:~/Documents/CTF/2019/TUCTF/Misc/SuperSecret$ binwalk -e document.odt 
