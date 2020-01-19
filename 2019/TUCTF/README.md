@@ -12,7 +12,8 @@ a0su@a0su:~/Documents/CTF/2019/TUCTF/Misc/RedYarn$
 
 ```
 # Super Secret
-```basha0su@a0su:~/Documents/CTF/2019/TUCTF/Misc/SuperSecret$ binwalk -e document.odt 
+```bash
+a0su@a0su:~/Documents/CTF/2019/TUCTF/Misc/SuperSecret$ binwalk -e document.odt 
 
 DECIMAL       HEXADECIMAL     DESCRIPTION
 --------------------------------------------------------------------------------
