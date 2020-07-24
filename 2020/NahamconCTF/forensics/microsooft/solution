@@ -1,0 +1,4 @@
+unzip *.docx
+cd /src/
+cat oof.txt | grep -i flag
+

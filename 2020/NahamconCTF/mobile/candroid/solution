@@ -1,0 +1,4 @@
+unzip the apk
+cat strings resources.arsc | grep -i flag
+
+flag{4ndr0id_1s_3asy}

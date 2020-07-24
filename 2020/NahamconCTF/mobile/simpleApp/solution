@@ -1,0 +1,4 @@
+strings classes.dex | grep -i flag{ | less
+
+flag{3asY_4ndr0id_r3vers1ng}
+
