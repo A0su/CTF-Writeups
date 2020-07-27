@@ -1,3 +1,0 @@
-092a87f57a: MISCWEBCTF{yes_this_site_is_filled_with_more_flags_like_this_one_try_and_find_them_all!}
-72b54ac63a: MISCWEBCTF{mr_robot_is_cool}
-f4a01a2a86 : MISCWEBCTF{it_wont_always_be_this_easy}
