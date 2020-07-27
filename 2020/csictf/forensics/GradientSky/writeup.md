@@ -1,0 +1,6 @@
+# gradient sky
+
+strings
+
+csictf{j0ker_w4snt_happy}
+

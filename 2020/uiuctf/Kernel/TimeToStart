@@ -1,0 +1,7 @@
+The password is pwny
+You can leak the password with a timing attack
+We're given the first character is 'p'
+So you can guess it's pwny since thats also 4 and starts with 'p' 
+But procedurally going through each letter and comparing 'pwa' 'pwn' you can see there is a longer delay with 'pwn' indication that it should be correct
+
+flag: uiuctf{t1ming_s1d3_chann3l_g4ng}
